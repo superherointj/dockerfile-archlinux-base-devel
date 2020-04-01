@@ -1,6 +1,6 @@
 FROM superherointj/archlinux-base as archlinux-base-devel
 
-RUN pacman -Syu --noconfirm base-devel perl openssh git npm nodejs
+RUN pacman -Syu --noconfirm base-devel perl openssh git npm nodejs musl
 
 RUN mkdir -p ~/.ssh/
 RUN chmod 700 ~/.ssh
